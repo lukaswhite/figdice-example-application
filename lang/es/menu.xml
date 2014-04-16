@@ -1,0 +1,5 @@
+<fig:dictionary xmlns:fig="http://www.figdice.org/" language="es">
+	<entry key="home">Inicio</entry>
+	<entry key="about">Acerca</entry>
+	<entry key="blog">Blog</entry>
+</fig:dictionary>

@@ -1,0 +1,18 @@
+<xml fig:mute="true"> <!-- Mute because this tag should not end up in the HTML document. But the FigDice template must have an XML root node. -->
+
+	<fig:dictionary file="menu.xml" name="menu" />
+
+	<!-- Load the page layout -->
+	<fig:include file="layout.html" />
+
+	<!-- The body goes here... -->
+
+	<!-- Set the <title> tag -->
+	<title fig:plug="docTitle"><fig:trans dict="menu" key="about" /></title>
+
+	<!-- Set the <h1> tag -->
+	<h1 fig:plug="pageTitle"><fig:trans dict="menu" key="about" /></h1>
+
+	<!-- "Plug in" the page content -->
+	<div fig:plug="pageContent">This is the about page</div>
+</xml>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<fig:template xmlns:fig="http://figdice.org/">
+
+	<fig:dictionary file="menu.xml" name="menu" />
+
+	<fig:feed class="BlogFeed" target="posts" num-posts="5" sort="'date'" sort-direction="'desc'" />
+
+	<fig:include file="layout.html" />
+
+	<title fig:plug="docTitle"><fig:trans dict="menu" key="blog" /></title>
+
+	<h1 fig:plug="pageTitle"><fig:trans dict="menu" key="blog" /></h1>
+
+	<div fig:plug="pageContent">
+		<article fig:walk="posts">
+			<h2 fig:text="title" />
+			<p class="author">By <span fig:text="author/name" /></p>
+			<div fig:text="body"></div>
+			<hr />
+		</article>
+	</div>
+
+</fig:template>

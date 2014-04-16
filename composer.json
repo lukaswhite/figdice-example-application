@@ -1,0 +1,19 @@
+{
+    "name": "lukaswhite/figdice-tutorial",
+    "description": "A sample application demonstrating FigDice templating",
+    "require": {
+	"silex/silex": "~1.1",
+        "figdice/figdice": "dev-master"
+    },
+    "autoload": {    
+        "psr-0": {            
+            "Sitepoint": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "lukaswhite",
+            "email": "hello@lukaswhite.com"
+        }
+    ]
+}

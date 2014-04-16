@@ -1,0 +1,41 @@
+<html>
+<head>
+	<title fig:slot="docTitle" />
+
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css" />
+</head> 
+<body>
+	<div class="container">
+    <header class="header">
+      <fig:include file="menu.html" />
+      <h3 class="text-muted">FigDice Example</h3>
+    </header>
+
+    <div class="row">
+
+      <div class="col-sm-12 col-md-9 col-lg-9">
+
+        <div class="content">
+          <h1 fig:slot="pageTitle" />      
+        	<div fig:slot="pageContent" />
+        </div>
+
+      </div>
+
+      <div class="col-sm-12 col-md-3 col-lg-3">
+
+        <fig:include file="tweets.html" />
+
+      </div>
+
+    </div>
+
+    <footer id="footer">
+    	<fig:include file="footer.html" />
+    </footer>
+
+  </div>
+
+</body>
+</html>
