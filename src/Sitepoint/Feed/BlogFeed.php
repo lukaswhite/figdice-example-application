@@ -7,8 +7,6 @@ class BlogFeed extends Feed
 
 	public function run() {
 		
-		var_dump($this->getParameter('foo'));
-
 		return array(
 			array(
 				'id'			=>	3,
