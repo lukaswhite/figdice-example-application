@@ -30,5 +30,9 @@ class FeedFactory implements \figdice\FeedFactory
 			return new TwitterFeed();
 		}
 
+		// Explicitly return null when our Factory cannot handle
+		// the requested class, so that more Factories can chain
+		// the lookup.
+		return null;
 	} 
 }
