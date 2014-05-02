@@ -22,7 +22,7 @@ class FeedFactory implements \figdice\FeedFactory
 	 */
 	public function create($className, array $attributes) {
 
-		if ($className == 'BlogFeed') {			
+		if ($className == 'BlogFeed') {						
 			return new BlogFeed();
 		}
 

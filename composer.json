@@ -3,7 +3,8 @@
     "description": "A sample application demonstrating FigDice templating",
     "require": {
 	"silex/silex": "~1.1",
-        "figdice/figdice": "dev-master"
+        "figdice/figdice": "dev-master",
+        "anahkiasen/underscore-php" : "dev-master"
     },
     "autoload": {    
         "psr-0": {            

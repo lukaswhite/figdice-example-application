@@ -13,7 +13,11 @@
 
 	<div fig:plug="pageContent">
 		<article fig:walk="posts">
-			<h2 fig:text="title" />
+			<h2>			 
+				<a fig:text="title">
+					<fig:attr name="href" value="'/blog/post/' + slug" />					
+				</a>
+			</h2>
 			<p class="author">By <span fig:text="author/name" /></p>
 			<div fig:text="body"></div>
 			<hr />
